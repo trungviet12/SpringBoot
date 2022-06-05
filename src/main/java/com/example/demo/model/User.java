@@ -16,11 +16,11 @@ public class User {
     private String email;
 
     @Column(name = "phone")
-    private String phone;
+    private int phone;
 
     public User() {}
 
-    public User(String name, String email, String phone) {
+    public User(String name, String email, int phone) {
         this.name = name;
         this.email = email;
         this.phone = phone;
@@ -50,11 +50,11 @@ public class User {
         this.email = email;
     }
 
-    public String getPhone() {
+    public int getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhone(int phone) {
         this.phone = phone;
     }
 }

@@ -21,4 +21,5 @@ public interface UserService {
 
 
 
+    List<User> findByPhone(int phone);
 }

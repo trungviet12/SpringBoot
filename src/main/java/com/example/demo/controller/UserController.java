@@ -43,5 +43,11 @@ public class UserController {
         return user;
 
     }
+    @GetMapping (value = "viet2")
+    public List<User> selectUser2 (@RequestParam("userPhone")int userPhone){
+        List<User> user = userService.findByPhone(userPhone);
+        return user;
+    }
+
 
 }
